@@ -190,7 +190,9 @@ nav div a {
   font-size: 1.6rem;
 }
 .footer {
+  max-width: 1000px;
   width: 100%;
+  margin: auto;
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
@@ -252,4 +254,13 @@ nav div a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 83%;
+  background: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 13px 0;
 }
