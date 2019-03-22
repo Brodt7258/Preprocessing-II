@@ -168,6 +168,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 5000px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 1.9%;
+  }
+}
 nav {
   max-width: 1000px;
   width: 100%;
@@ -178,16 +185,36 @@ nav {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 5000px) {
+  nav {
+    flex-direction: column;
+    max-width: 500px;
+    padding: 0;
+    padding-bottom: 8px;
+  }
+}
 nav div {
   display: flex;
   justify-content: space-between;
   width: 36%;
   margin: 0 31px;
 }
+@media (max-width: 5000px) {
+  nav div {
+    width: 100%;
+    padding: 0 11.5%;
+  }
+}
 nav div a {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
+}
+@media (max-width: 5000px) {
+  nav h1 {
+    font-size: 3rem;
+    margin: 18px 0 16px;
+  }
 }
 .footer {
   max-width: 1000px;

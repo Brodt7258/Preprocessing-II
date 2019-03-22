@@ -10,16 +10,36 @@ nav {
   align-items: center;
   border-bottom: 2px dashed @navigation-border;
 
+  @media @phone {
+    flex-direction: column;
+    max-width: 500px;
+    padding: 0;
+    padding-bottom: 8px;
+  }
+
   div {
     display: flex;
     justify-content: space-between;
     width: 36%;
     margin: 0 31px;
-    
+
+    @media @phone {
+      width: 100%;
+      padding: 0 11.5%;
+    }
+
     a {
       text-decoration: none;
       color: @font-color;
       font-size: 1.6rem;
+    }
+
+    
+  }
+  h1 {
+    @media @phone {
+      font-size: 3rem;
+      margin: 18px 0 16px;
     }
   }
 }
