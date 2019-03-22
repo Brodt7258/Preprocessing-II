@@ -15,14 +15,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -34,6 +47,10 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -42,12 +59,20 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @phone {
+        padding: 0;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @phone {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
