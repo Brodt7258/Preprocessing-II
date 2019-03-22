@@ -314,9 +314,20 @@ nav div a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 5000px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 5000px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   width: 83%;
@@ -326,4 +337,12 @@ nav div a {
   text-align: center;
   font-size: 1.8rem;
   padding: 13px 0;
+}
+@media (max-width: 5000px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    background: #17A2B8;
+    color: #FFFFFF;
+    border-radius: 15px;
+  }
 }

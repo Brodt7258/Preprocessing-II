@@ -85,15 +85,28 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 80%;
+      }
 
       .btn {
         .button(15px, 83%);
         text-align: center;
         font-size: 1.8rem;
         padding: 13px 0;
+
+        @media @phone {
+          .button(15px, 100%);
+        }
       }
     }
   }
