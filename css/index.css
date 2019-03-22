@@ -173,9 +173,8 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .container {
-    width: 100%;
     padding: 0 1.9%;
   }
 }
@@ -189,7 +188,7 @@ nav {
   align-items: center;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   nav {
     flex-direction: column;
     padding: 0;
@@ -202,7 +201,7 @@ nav div {
   width: 36%;
   margin: 0 31px;
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   nav div {
     width: 100%;
     padding: 0 11.5%;
@@ -213,7 +212,7 @@ nav div a {
   color: #212529;
   font-size: 1.6rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   nav h1 {
     font-size: 3rem;
     margin: 18px 0 16px;
